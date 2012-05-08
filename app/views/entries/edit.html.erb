@@ -1,6 +1,4 @@
-<h1>Editing entry</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @entry %> |
-<%= link_to 'Back', entries_path %>
+<%- model_class = @entry.class -%>
+<h1><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                 :default => "Edit #{model_class.model_name.human}") %></h1>
+<%= render :partial => 'form' %>
