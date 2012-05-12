@@ -40,3 +40,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+group :development, :test do 
+  gem 'ansi'
+  gem 'turn'
+  gem 'minitest'
+end
